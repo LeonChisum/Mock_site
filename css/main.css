@@ -1,7 +1,6 @@
 @import 'cssreset.css';
 
 .container {
-	max-width: 1100px;
 	margin: 0 auto;
 }
 
@@ -114,33 +113,97 @@ header .image img {
 }
 
 #blog-section .photo-blog {
+	align-self: flex-start;
 	padding: 10% 0;
-	border-bottom: 1px solid grey;
-	flex-grow: 2;
+	border-bottom: 1px solid lightgrey;
+	width: 100%;
+	margin-right: 100px;
 }
 
 #blog-section .photo-blog .single-blog .single-blog-img {
 	background-image: url('/images/article-img.jpeg');
+	background-size: cover;
+	background-position: top center;
+	background-position-y: -50px;
 	width: 100%;
+	margin-right: 5%;
 }
 #blog-section .photo-blog img {
 	width: 100%;
 }
-#blog-section .headings ul {
-	display: flex;
-}
-#blog-section .headings ul li {
-	width: 100px;
-	padding-right: 10px;
-}
-#blog-section .headings ul li a {
+#blog-section .headings a {
 	text-decoration: none;
-	color: black;
-	border-right: thin solid black;
+}
+.blog-info .headings {
+	font-size: 0.8rem;
+	font-weight: bold;
 }
 
-#blog-section .headings ul li a:nth-child(0) {
-	color: blue !important;
+.blog-info h1 {
+	font-size: 1.3rem;
+	font-weight: 500;
+}
+.blog-info p {
+	font-weight: 500;
+}
+
+.blogs {
+	padding: 10% 0;
+}
+
+.blogs .blog-info h1 {
+	font-size: 2rem;
+}
+
+.blogs .single-blog {
+	padding-bottom: 40px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid lightgrey;
+}
+
+footer {
+	background: linear-gradient(60deg, #0094ed 0, #0a6cd6 100%);
+	padding: 50px 0;
+}
+
+footer .footer-nav {
+	border-top: 1px solid white;
+	padding-top: 50px;
+	color: white;
+	justify-content: space-between;
+}
+footer .footer-nav h1 {
+	font-weight: bold;
+	font-size: 1.2rem;
+	position: relative;
+}
+
+footer .footer-nav hr {
+	width: 60px;
+	color: white;
+}
+footer .footer-content .logo {
+	width: 21%;
+	margin: 2% 0;
+	padding-right: 50px;
+	border-right: 1px solid white;
+}
+footer .footer-content .logo img {
+	position: relative;
+	width: 100%;
+}
+
+.nav-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1em;
+}
+.contact p {
+	margin-bottom: 10px;
+}
+
+.copyright-section {
+	background-color: #065fa8;
 }
 @media only screen and (max-width: 960px) {
 	.container {
