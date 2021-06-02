@@ -59,6 +59,7 @@ header .header-menu a:hover {
 	font-weight: bolder;
 	transition: all 0.2s ease-in-out;
 }
+
 header .menu-btn {
 	display: flex;
 	justify-content: center;
@@ -125,6 +126,7 @@ header .image img {
 	background-size: cover;
 	background-position: top center;
 	background-position-y: -50px;
+	border-radius: 10px;
 	width: 100%;
 	margin-right: 5%;
 }
@@ -164,6 +166,7 @@ header .image img {
 footer {
 	background: linear-gradient(60deg, #0094ed 0, #0a6cd6 100%);
 	padding: 50px 0;
+	color: white;
 }
 
 footer .footer-nav {
@@ -183,7 +186,7 @@ footer .footer-nav hr {
 	color: white;
 }
 footer .footer-content .logo {
-	width: 21%;
+	width: 35%;
 	margin: 2% 0;
 	padding-right: 50px;
 	border-right: 1px solid white;
@@ -201,9 +204,46 @@ footer .footer-content .logo img {
 .contact p {
 	margin-bottom: 10px;
 }
-
+.logo-info {
+	line-height: 2;
+	padding-left: 60px;
+	font-size: 0.8rem;
+}
 .copyright-section {
 	background-color: #065fa8;
+	color: #45abfe;
+	font-size: 0.9rem;
+	align-items: center;
+}
+.copyright-section p {
+	font-size: 0.9rem;
+	line-height: 2;
+	padding-left: 50px;
+}
+.copyright-section ul {
+	/* width: 50%; */
+    text-align: center;
+    align-items: center;
+}
+.copyright-section ul li {
+	padding: 0 2%;
+	border-right: 1px solid;
+	font-size: .8rem;
+}
+.copyright-section .icon {
+	display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    color: #065fa8;
+    font-size: 12px;
+	background-color: #45abfe;
+	margin-right: 15px;
+}
+
+
 }
 @media only screen and (max-width: 960px) {
 	.container {
