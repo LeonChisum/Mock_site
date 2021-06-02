@@ -33,13 +33,16 @@ header .header-container {
 
 header .logo {
 	font-size: 0.7rem;
+	transition: .3s ease-in-out all;
+}
+header .logo:hover {
+	font-size: 0.74rem;
 }
 header .logo h3 {
 	font-weight: bold;
 }
 header .logo a {
 	text-decoration: none;
-	color: #fdee21;
 }
 header .header-menu {
 	font-size: 1rem;
@@ -53,6 +56,10 @@ header .header-menu a {
 	text-decoration: none;
 	color: white;
 	width: 100%;
+}
+header .header-menu a i {
+	font-size: .6rem;
+	margin-left: 5px;
 }
 header .header-menu a:hover {
 	text-decoration: none;
@@ -81,7 +88,7 @@ header .image img {
 	width: 100%;
 }
 
-.mobile-menu {
+/* .mobile-menu {
 	background: rgba(255, 255, 255, 0.97);
 	display: flex;
 	flex-direction: column;
@@ -95,19 +102,46 @@ header .image img {
 	transition: all 0.3s ease-in-out;
 	-webkit-box-shadow: 2px 0px 25px -5px rgba(0, 0, 0, 0.82);
 	box-shadow: 2px 0px 25px -5px rgba(0, 0, 0, 0.82);
+} */
+.mobile-menu {
+	display: flex;
+	flex-direction: column;
+	z-index: 2;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background: #0068dc;
+    box-shadow: 0 0 15px rgb(0 0 0 / 10%);
+    transition: .3s ease-in-out all;
 }
 .mobile-menu.active {
-	transform: translate3d(0, 0, 0);
-	display: none;
+	/* transform: translate3d(0, 0, 0); */
+	right: 0;
+	display: flex;
+	z-index: 30;
+}
+.mobile-menu.active i {
+	color: white;
+	font-size: 2rem;
+	padding: 20px;
+	align-self: flex-end;
+	cursor: pointer;
+}
+.mobile-menu.active a {
+
 }
 .mobile-menu a {
-	padding: 15px;
+	padding: 10px 20px;
 	text-decoration: none;
-	color: black;
+	color: white;
+	font-size: 1.3rem;
+	font-weight: 500;
 }
 .mobile-menu a:hover {
-	color: black;
-	background: #fdee21;
+	color: white;
+	background: #065fa8;
 }
 
 #blog-section {
